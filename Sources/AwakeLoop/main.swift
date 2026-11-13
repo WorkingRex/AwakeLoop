@@ -115,6 +115,13 @@ struct AwakeLoopApp: App {
             ControlPanel(controller: controller)
         } label: {
             Label("AwakeLoop", systemImage: controller.isEnabled ? "cursorarrow.motionlines" : "cursorarrow")
+                .contextMenu {
+                    Button(role: .destructive) {
+                        NSApp.terminate(nil)
+                    } label: {
+                        Label("結束 AwakeLoop", systemImage: "power")
+                    }
+                }
         }
         .menuBarExtraStyle(.window)
     }
@@ -172,6 +179,15 @@ struct ControlPanel: View {
 
             Button(action: controller.testCursorMovement) {
                 Label("立即測試", systemImage: "cursorarrow.motionlines")
+            }
+            .buttonStyle(.borderless)
+
+            Divider()
+
+            Button(role: .destructive) {
+                NSApp.terminate(nil)
+            } label: {
+                Label("結束 AwakeLoop", systemImage: "power")
             }
             .buttonStyle(.borderless)
         }
