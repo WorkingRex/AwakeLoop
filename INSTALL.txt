@@ -1,0 +1,15 @@
+AwakeLoop 安裝說明
+
+系統需求：macOS 13 或更新版本。此 app 支援 Intel 與 Apple Silicon Mac。
+
+安裝方式：
+1. 開啟 AwakeLoop-Installer.dmg。
+2. 將 AwakeLoop.app 拖到 Applications 捷徑。
+3. 從「應用程式」資料夾開啟 AwakeLoop。
+
+首次開啟提示：
+此版本尚未使用 Apple Developer ID 簽署或公證。macOS 可能會提示無法確認開發者。
+如你信任此 app，請在 Finder 中按住 Control 並點擊 AwakeLoop.app，選擇「打開」，再確認一次。
+若仍被阻擋，請前往「系統設定」>「隱私權與安全性」，在安全性區域選擇「仍要打開」。
+
+開啟後，從螢幕上方選單列的游標圖示設定啟用狀態與游標移動間隔。
